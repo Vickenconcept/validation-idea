@@ -18,7 +18,7 @@ class LeadController extends Controller
     {
         $validated = $request->validate([
             'email' => ['required', 'email', 'unique:leads,email'],
-            'business_size' => ['required', 'in:solo,2-5,6-10'],
+            'business_size' => ['required', 'in:solo,2-5,6-10,10+'],
             'quoting_method' => ['required', 'string', 'max:2000'],
             'willingness_to_pay' => ['required', 'in:yes,maybe,no'],
         ], [

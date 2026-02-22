@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stop Driving for Free Estimates</title>
+    <title>Stop Driving for Free Cleaning Estimates</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700|sora:500,600,700" rel="stylesheet" />
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -35,10 +35,10 @@
             {{-- Left: Copy --}}
             <div>
                 <h1 class="font-display text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl lg:text-[2.5rem] lg:leading-[1.15]">
-                    Stop driving for free estimates.
+                    Stop driving for free cleaning estimates.
                 </h1>
                 <p class="mt-4 text-lg text-stone-600 sm:text-xl">
-                    Turn customer photos into accurate cleaning estimates in minutes — not hours.
+                    Turn customer photos into bookable cleaning estimates in minutes — not hours.
                 </p>
 
                 <ul class="mt-8 space-y-4" role="list">
@@ -52,13 +52,13 @@
                         <span class="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                             <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
                         </span>
-                        <span>You guess or drive out for free estimates</span>
+                        <span>You guess — or drive out for a free estimate</span>
                     </li>
                     <li class="flex gap-3 text-stone-600">
                         <span class="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600">
                             <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         </span>
-                        <span>You reply late and lose jobs</span>
+                        <span>You reply late and lose the job</span>
                     </li>
                     <li class="flex gap-3 text-stone-600">
                         <span class="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600">
@@ -77,7 +77,7 @@
             <div class="lg:sticky lg:top-8">
                 <div class="rounded-2xl border border-stone-200/80 bg-white p-6 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08),0_8px_16px_-8px_rgba(0,0,0,0.04)] sm:p-8">
                     <h2 class="font-display text-xl font-semibold text-stone-900">Get early access</h2>
-                    <p class="mt-1 text-sm text-stone-500">We’ll be in touch when the beta opens.</p>
+                    <p class="mt-1 text-sm text-stone-500">Help shape the beta for cleaning businesses.</p>
 
                     @if (session('success'))
                         <div class="mt-4 rounded-xl bg-teal-50 px-4 py-3 text-sm font-medium text-teal-800">
@@ -109,10 +109,10 @@
                             <label for="business_size" class="block text-sm font-medium text-stone-700">Business size</label>
                             <select name="business_size" id="business_size" required
                                 class="mt-1.5 block w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-stone-900 shadow-sm transition focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20">
-                                <option value="">Select…</option>
                                 <option value="solo" {{ old('business_size') === 'solo' ? 'selected' : '' }}>Solo</option>
-                                <option value="2-5" {{ old('business_size') === '2-5' ? 'selected' : '' }}>2–5</option>
-                                <option value="6-10" {{ old('business_size') === '6-10' ? 'selected' : '' }}>6–10</option>
+                                <option value="2-5" {{ old('business_size') === '2-5' ? 'selected' : '' }}>2–5 cleaners</option>
+                                <option value="6-10" {{ old('business_size') === '6-10' ? 'selected' : '' }}>6–10 cleaners</option>
+                                <option value="10+" {{ old('business_size') === '10+' ? 'selected' : '' }}>10+</option>
                             </select>
                         </div>
 
@@ -120,11 +120,12 @@
                             <label for="quoting_method" class="block text-sm font-medium text-stone-700">How do you quote jobs today?</label>
                             <textarea name="quoting_method" id="quoting_method" required rows="4"
                                 class="mt-1.5 block w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-stone-900 shadow-sm transition focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20"
-                                placeholder="e.g. I visit in person, use photos, or a mix…">{{ old('quoting_method') }}</textarea>
+                                placeholder="e.g. Drive in person, estimate from photos, or a mix">{{ old('quoting_method') }}</textarea>
                         </div>
 
-                        <div>
+                        <div class="mt-6">
                             <label for="willingness_to_pay" class="block text-sm font-medium text-stone-700">Would you pay $50–$100/month for this if it worked?</label>
+                            <p class="mt-0.5 mb-1.5 text-xs italic text-stone-500">Assume this saves you several hours per month.</p>
                             <select name="willingness_to_pay" id="willingness_to_pay" required
                                 class="mt-1.5 block w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-stone-900 shadow-sm transition focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20">
                                 <option value="">Select…</option>
