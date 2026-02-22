@@ -38,7 +38,7 @@
                     Stop driving for free cleaning estimates.
                 </h1>
                 <p class="mt-4 text-lg text-stone-600 sm:text-xl">
-                    Turn customer photos into bookable cleaning estimates in minutes — not hours.
+                    Use customer photos to pre-qualify jobs and send confident estimates faster.
                 </p>
 
                 <ul class="mt-8 space-y-4" role="list">
