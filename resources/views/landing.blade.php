@@ -68,16 +68,6 @@
                     </li>
                 </ul>
 
-                <div class="mt-10 rounded-xl border border-stone-200/80 bg-white/60 p-6">
-                    <h2 class="font-display text-lg font-semibold text-stone-900">Free Quote Review (Beta Test)</h2>
-                    <p class="mt-2 text-sm text-stone-600">If you already quote from photos or video, we'll help you:</p>
-                    <ul class="mt-3 space-y-2 text-sm text-stone-600">
-                        <li class="flex gap-2"><span class="text-teal-600">•</span> review job complexity</li>
-                        <li class="flex gap-2"><span class="text-teal-600">•</span> estimate time &amp; crew size</li>
-                        <li class="flex gap-2"><span class="text-teal-600">•</span> draft a quote you can adjust</li>
-                    </ul>
-                    <p class="mt-3 text-sm text-stone-500">Free during beta. No obligation.</p>
-                </div>
             </div>
 
             {{-- Right: Form card --}}
