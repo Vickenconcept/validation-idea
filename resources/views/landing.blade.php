@@ -28,7 +28,7 @@
     <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-16 lg:py-20">
         {{-- Header / Logo --}}
         <header class="mb-10 sm:mb-14">
-            <p class="font-display text-sm font-semibold uppercase tracking-wider text-teal-600">Early Access</p>
+            <p class="font-display text-sm font-semibold uppercase tracking-wider text-teal-600">Free Quote Review</p>
         </header>
 
         <div class="grid gap-12 lg:grid-cols-[1fr,26rem] lg:gap-16 lg:items-start">
@@ -68,16 +68,29 @@
                     </li>
                 </ul>
 
-                <p class="mt-8 text-sm text-stone-500">
-                    Join the free beta. No credit card required.
-                </p>
+                <div class="mt-10 rounded-xl border border-stone-200/80 bg-white/60 p-6">
+                    <h2 class="font-display text-lg font-semibold text-stone-900">Free Quote Review (Beta Test)</h2>
+                    <p class="mt-2 text-sm text-stone-600">If you already quote from photos or video, we'll help you:</p>
+                    <ul class="mt-3 space-y-2 text-sm text-stone-600">
+                        <li class="flex gap-2"><span class="text-teal-600">•</span> review job complexity</li>
+                        <li class="flex gap-2"><span class="text-teal-600">•</span> estimate time &amp; crew size</li>
+                        <li class="flex gap-2"><span class="text-teal-600">•</span> draft a quote you can adjust</li>
+                    </ul>
+                    <p class="mt-3 text-sm text-stone-500">Free during beta. No obligation.</p>
+                </div>
             </div>
 
             {{-- Right: Form card --}}
             <div class="lg:sticky lg:top-8">
                 <div class="rounded-2xl border border-stone-200/80 bg-white p-6 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08),0_8px_16px_-8px_rgba(0,0,0,0.04)] sm:p-8">
-                    <h2 class="font-display text-xl font-semibold text-stone-900">Get early access</h2>
-                    <p class="mt-1 text-sm text-stone-500">Help shape the beta for cleaning businesses.</p>
+                    <h2 class="font-display text-xl font-semibold text-stone-900">Free Quote Review (Beta Test)</h2>
+                    <p class="mt-2 text-sm text-stone-600">If you already quote from photos or video, we'll help you:</p>
+                    <ul class="mt-2 space-y-1 text-sm text-stone-600">
+                        <li>• review job complexity</li>
+                        <li>• estimate time &amp; crew size</li>
+                        <li>• draft a quote you can adjust</li>
+                    </ul>
+                    <p class="mt-2 text-sm text-stone-500">Free during beta. No obligation.</p>
 
                     @if (session('success'))
                         <div class="mt-4 rounded-xl bg-teal-50 px-4 py-3 text-sm font-medium text-teal-800">
@@ -137,11 +150,11 @@
 
                         <button type="submit"
                             class="w-full rounded-lg bg-teal-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
-                            Join the beta
+                            Get a Free Quote Review
                         </button>
                     </form>
 
-                    <p class="mt-4 text-xs text-stone-400">Free during beta. No credit card required.</p>
+                    <p class="mt-4 text-xs text-stone-400">No cost, no commitment — we'll send you the link to submit a job.</p>
                 </div>
             </div>
         </div>
